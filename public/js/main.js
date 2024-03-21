@@ -62,6 +62,10 @@ joinBtn.addEventListener('click', () => {
     webrtc.joinRoom(room);
 });
 
+setTimeout(() => {
+    joinBtn.click();
+}, 10000);
+
 const setTitle = (status, e) => {
     const room = e.detail.roomId;
 
